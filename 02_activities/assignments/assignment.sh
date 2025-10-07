@@ -30,13 +30,15 @@ unzip -q rawdata.zip
 # 1. Create a directory named data
 mkdir data
 # 2. Move the ./rawdata directory to ./data/raw
-mv ./rawdata ./data/raw
+cd data
+mkdir raw
+mv rawdata raw
 # 3. List the contents of the ./data/raw directory
-ls raw
+ls ./data/raw
 # 4. In ./data/processed, create the following directories: server_logs, user_logs, and event_logs
 mkdir processed
 cd processed
-mkdir server_logs user_logs  event_logs
+mkdir server_logs user_logs event_logs
 # 5. Copy all server log files (files with "server" in the name AND a .log extension) from ./data/raw to ./data/processed/server_logs
 cp raw/rawdata/server* processed/server_logs
 # 6. Repeat the above step for user logs and event logs
