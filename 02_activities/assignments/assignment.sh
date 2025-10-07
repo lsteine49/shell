@@ -1,19 +1,3 @@
-# open proper directory
-cd /c/Users/liane/Dropbox/liane/PhD/"Data science course"/"DSI Assignment 1"
-
-# clone git repo
-git clone https://github.com/lsteine49/shell.git
-
-# open shell folder
-cd shell
-
-# create branch for work 
-git switch -c assignment
-
-# open assignmnet 
-cd 02_activities/assignments
-code assignment.sh
-
 #!/bin/bash
 set -x
 
@@ -70,6 +54,4 @@ cat inventory.txt
 
 echo "Project setup is complete!"
 
-#commit changes
-git add assignment.sh
-git commit
+
